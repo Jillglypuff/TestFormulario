@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link href="./test.css" rel="stylesheet" />
+    <script src="./test.php"></script>
+  </head>
+
+  <body class="body">
+     <!--titulo-->
+     <header>
+      <h1>Formulario</h1>
+     </header>
+
+     <main>
+        <!--formulario inicia aqui-->
+       <form method= "post" class="formulario" action="./test.php">
+        <div class="formulario-contenedor"> <!--contenedor para css-->
+            <div class="formulario-input">
+                <!--nombre-->
+              <label for="nombre">Nombre</label>
+              <input name="nombre" id="nombre"  type="text"  placeholder="John"  required />
+            </div>
+
+            <!--correo-->
+            <div class="formulario-input">
+              <label for="correo-electronico">Correo electrónico</label>
+              <input name="correo-electronico" id="correo-electronico" type="email" placeholder="correo@ejemplo.com" required />
+            </div>
+
+            <!--asunto-->
+                <div class="formulario-input">
+                  <label for="asunto">Asunto</label>
+                  <input name="asunto" id="asunto" type="text"placeholder="asunto" required />
+                </div>
+
+                   <!--mensaje-->
+            <div class="formulario-input">
+             <label for="mensaje">Mensaje:</label>
+              <textarea name="mensaje" id="mensaje" rows ="4" required > </textarea>
+            </div>
+            <!--boton-->
+        <input class="boton" type="submit" value="Enviar">
+        </div>
+
+
+      </form>
+     </main>
+
+     <footer></footer> <!--no se solicito-->
+  </body>
+</html>
+
