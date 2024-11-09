@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulario de contacto" />
+    <meta name="keywords" content="formulario, contacto, mensaje" />
+    <meta name="author" content="Tu Nombre" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Formulario de Contacto" />
+    <meta property="og:description" content="Formulario de contacto para comunicarse con nosotros" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Formulario de Contacto" />
+    <meta name="twitter:description" content="Formulario de contacto para comunicarse con nosotros" />
+    
+    <title>Formulario de Contacto</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./test.css" />
+    
+    <!-- Scripts -->
+    <script src="./test.php" defer></script>
+  </head>
+
+  <body class="body">
+     <!--titulo-->
+     <header class="header">
+      <h1 class="title">Contact us!</h1>
+     </header>
+
+     <main class="main">
+        <div class="split-container">
+          <!-- Columna izquierda para la imagen -->
+          <div class="image-column">
+            <img src="/pexels-tirachard-kumtanom-733857.jpg" alt="Dashboard preview" class="feature-image">
+            
+            <!-- Logos de marcas -->
+            
+          </div>
+
+          <!-- Columna derecha para el formulario -->
+          <div class="form-column">
+            <!-- Tu formulario existente aquí -->
+            <div class="form-container">
+              <h2 class="form-title">Get in touch</h2>
+              <p class="form-subtitle">Let's chat about how our expert team can help.</p>
+              
+              <form method="post" class="formulario" action="./test.php">
+                <div class="form-row">
+                  <div class="form-group half">
+                    <label for="firstname">First name</label>
+                    <input name="firstname" id="firstname" type="text" placeholder="First name" required />
+                  </div>
+                  
+                  <div class="form-group half">
+                    <label for="lastname">Last name</label>
+                    <input name="lastname" id="lastname" type="text" placeholder="Last name" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input name="email" id="email" type="email" placeholder="you@company.com" required />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group half">
+                    <label for="team-size">Team size</label>
+                    <select name="team-size" id="team-size" required>
+                      <option value="1-50">1-50 people</option>
+                      <option value="51-100">51-100 people</option>
+                      <option value="100+">100+ people</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group half">
+                    <label for="location">Location</label>
+                    <select name="location" id="location" required>
+                      <option value="nz">🇳🇿 New Zealand</option>
+                      <!-- Añade más países según necesites -->
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone number</label>
+                  <div class="phone-input">
+                    <select name="country-code" id="country-code">
+                      <option value="nz">NZ +</option>
+                    </select>
+                    <input name="phone" id="phone" type="tel" placeholder="64 (210) 000-0000" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="4" placeholder="Leave us a message..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+     </main>
+
+     <footer></footer> <!--no se solicito-->
+  </body>
+</html>
+
